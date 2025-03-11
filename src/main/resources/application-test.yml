@@ -1,0 +1,14 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+  application:
+    name: AIShortsStudio
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+    username: sa
+    password: 1234
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
