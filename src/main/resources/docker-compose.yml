@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  app:
+    image: aishortsstudio  # Jenkins로 빌드한 Docker 이미지
+    container_name: aishortsstudio
+    ports:
+      - "8081:8080"  # 외부 8081 -> 내부 8080
+    depends_on:
+      - db  # DB가 올라와야 시작
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/AiShortsStudio
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 1234
+      SPRING_JPA_HIBERNATE_DDL_AUTO: create
+      SPRING_PROFILES_ACTIVE: prod  # (application-prod.yml 사용하도록)
+    restart: always  # 자동 재시작
+
+  db:
+    image: postgres:15
+    container_name: postgres-db
+    ports:
+      - "5432:5432"  # 외부 5432 -> 내부 5432
+    environment:
+      POSTGRES_DB: mydb
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres-data:/var/lib/postgresql/data  # 데이터 유지
+    restart: always  # 자동 재시작
+
+volumes:
+  postgres-data:  # DB 데이터가 저장될 볼륨
