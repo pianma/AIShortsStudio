@@ -14,6 +14,7 @@ services:
       SPRING_DATASOURCE_PASSWORD: 1234
       SPRING_JPA_HIBERNATE_DDL_AUTO: create
       SPRING_PROFILES_ACTIVE: prod  # (application-prod.yml 사용하도록)
+      TZ: Asia/Seoul  # 타임존 설정
     restart: always  # 자동 재시작
 
   db:
