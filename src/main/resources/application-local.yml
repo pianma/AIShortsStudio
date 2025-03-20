@@ -14,3 +14,7 @@ spring:
       ddl-auto: create
     show-sql: true
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    cache: false
