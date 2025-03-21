@@ -1,0 +1,103 @@
+/* Theme CSS */
+
+
+/* event calendar theme */
+.bootstrap-calendar-container {}
+
+.js-events .list-group-item {
+    padding: 0;
+    margin-top: 12px;
+    border-bottom: 0;
+}
+.list-group-flush>.list-group-item {}
+
+.event-list {
+    align-items: center;
+    column-gap: 16px;
+    padding: 20px 24px;
+    border: 1px solid #919eab33;
+    border-radius: 8px;
+    min-height: 81px;
+}
+.event-list .event-day {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0;
+    border-radius: 50em;
+    background: #4A69B5;
+    color: var(--bs-white);
+    text-align: center;
+    line-height: 36px;
+}
+.event-list .event-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--bs-gray-800);
+}
+.event-list .event-time {
+    font-size: 14px;
+    color: var(--bs-gray-600);
+    margin-bottom: 0;
+}
+
+
+
+
+.bootstrap-calendar-weekday-row {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.bootstrap-calendar-weekday-row > div:not(.js-day-name-short) {
+    display: none !important;
+}
+.js-day-name-short {
+    font-size: 11px !important;
+    color: var(--bs-gray-600) !important;
+}
+.js-weeks {padding-left: 30px;padding-right: 30px;
+    padding-bottom: 30px;
+}
+.js-weeks .bootstrap-calendar-week {
+    display: none !important;
+}
+
+
+.btn-curr-month.month-name {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    color: #212B36;
+}
+
+.btn.btn-prev-month,
+.btn.btn-next-month {
+    font-size: 24px;
+    color: var(--bs-gray-600);
+}
+
+
+
+.bootstrap-calendar-day {
+    color: var(--bs-primary);
+    padding: 5px;
+}
+.bootstrap-calendar-day > div {
+    font-size: 14px !important;
+    color: inherit;
+}
+.bootstrap-calendar-day.js-today {
+    border: 1px solid var(--bs-gray-600);
+    background: var(--bs-white) !important;
+    color: var(--bs-primary) !important;
+}
+.bootstrap-calendar-day.js-today.active {
+    background: #4A69B5 !important;
+    color: var(--bs-white) !important;
+}
+.bootstrap-calendar-day.active {
+    background: #4A69B5;
+    color: var(--bs-white) !important;
+    border-radius: 50%;
+}
+
+/* end of demo page */

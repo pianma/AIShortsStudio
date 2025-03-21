@@ -1,0 +1,98 @@
+/* === 글로벌 변수 === */
+:root {
+    --primary-color: #3B82F6;
+    --primary-hover: #2563eb;
+    --bg-light: #f3f4f6;
+    --text-color: #111827;
+    --gray: #6b7280;
+}
+
+/* === 로그인 전용 스타일 (aiss-login- prefix 사용) === */
+.aiss-login-body {
+    background-color: var(--bg-light);
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.aiss-login-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 420px;
+}
+
+.aiss-login-title {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.aiss-login-subtitle {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--gray);
+    margin-bottom: 2rem;
+}
+
+.aiss-login-form-group {
+    margin-bottom: 1.2rem;
+}
+
+.aiss-login-form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.aiss-login-form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.aiss-login-form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.aiss-login-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.aiss-login-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.aiss-login-signup-link {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.aiss-login-signup-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.aiss-login-signup-link a:hover {
+    text-decoration: underline;
+}

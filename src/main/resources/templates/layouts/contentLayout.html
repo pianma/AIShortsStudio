@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <th:block layout:replace="~{/fragments/css}"></th:block>
+</head>
+<body>
+<div layout:fragment="content">
+    <!-- 자식 페이지의 layout:fragment="content"가 이 위치에 들어옵니다 -->
+</div>
+</body>
+<th:block th:replace="~{fragments/script}"></th:block>
+</html>
