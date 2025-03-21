@@ -52,15 +52,6 @@ tasks.named('bootBuildImage') {
     builder = 'paketobuildpacks/builder-jammy-base:latest'
 }
 
-sourceSets {
-    main {
-        resources {
-            srcDirs = ['src/main/resources']
-            includes = ['**/*.html', '**/*.properties', '**/*.yml']
-        }
-    }
-}
-
 
 
 tasks.named('test') {

@@ -9,9 +9,8 @@ import org.springframework.web.servlet.ModelAndView;
 public class Sample {
 
     @GetMapping("/")
-    @ResponseBody
     public ModelAndView home(ModelAndView model) {
-        model.setViewName("/index");
+        model.setViewName("index");
         return model;
     }
 
