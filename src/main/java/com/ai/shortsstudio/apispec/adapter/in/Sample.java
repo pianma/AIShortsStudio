@@ -10,7 +10,7 @@ public class Sample {
     @GetMapping("/")
     @ResponseBody
     public String home() {
-        return "Hello Docker World2";
+        return "자동 배포 테스트";
     }
 
 }
