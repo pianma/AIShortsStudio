@@ -96,3 +96,55 @@
 .aiss-login-signup-link a:hover {
     text-decoration: underline;
 }
+
+
+/* 대시보드 */
+.aiss-dashboard-container {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.aiss-dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.aiss-video-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.aiss-video-list th, .aiss-video-list td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+.aiss-status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: #e0edff;
+    color: var(--primary-color);
+}
+
+.aiss-create-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.aiss-create-btn:hover {
+    background-color: var(--primary-hover);
+}
