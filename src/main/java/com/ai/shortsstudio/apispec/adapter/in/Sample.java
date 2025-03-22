@@ -9,12 +9,12 @@ public class Sample {
 
     @GetMapping("/login")
     public ModelAndView home(ModelAndView model) {
-        model.setViewName("/auth/login");
+        model.setViewName("auth/login");
         return model;
     }
     @GetMapping("/signup")
     public ModelAndView signup(ModelAndView model) {
-        model.setViewName("/auth/signup");
+        model.setViewName("auth/signup");
         return model;
     }
 
