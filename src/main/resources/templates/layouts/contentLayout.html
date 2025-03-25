@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
-    <th:block layout:replace="~{/fragments/css}"></th:block>
-    <meta charset="utf-8" />
+    <th:block th:replace="fragments/css :: css"></th:block>    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="../assets/img/favicon.png">
@@ -17,5 +16,5 @@
     <!-- 자식 페이지의 layout:fragment="content"가 이 위치에 들어옵니다 -->
 </div>
 </body>
-<th:block th:replace="~{fragments/script}"></th:block>
+<th:block th:replace="fragments/script :: script"></th:block>
 </html>
