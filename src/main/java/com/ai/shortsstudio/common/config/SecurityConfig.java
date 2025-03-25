@@ -14,8 +14,10 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/.git/**", "/**/.git/**", "/**/*.yml").denyAll()
                         .anyRequest().permitAll()
                 );
+
         return http.build();
     }
 }
